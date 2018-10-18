@@ -1,0 +1,17 @@
+@import "params/variables";
+@import "params/mixins";
+@import "normalize-css";
+html {
+	font-size: 10px;
+}
+
+body {
+	background: #ffffff;
+	font-size: 150px;
+}
+.all {
+	background-color: crimson;
+	margin: 0 auto;
+}
+
+@import "grid.scss";

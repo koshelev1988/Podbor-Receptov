@@ -1,0 +1,6 @@
+@import "params/smart-grid";
+
+.container {
+	@include wrapper();
+
+}
