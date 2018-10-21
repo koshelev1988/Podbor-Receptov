@@ -1,0 +1,67 @@
+@import "params/variables";
+@import "params/mixins";
+
+.sid-bar {
+	background-color: $color-anthraciteDarkGray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: $size-175px;
+	height: 100%;
+	max-height: 67rem;
+	padding: $size-26px 0 $size-12px 0;
+	& a {
+		color: $color-wight;
+	}
+	& .sb-menu-lu,
+	& .logo,
+	& .languages,
+	& .socials {
+		text-align: center;
+	}
+	& .sb-menu-lu, & .languages {
+		font-size: $size-14px;
+
+	}
+	& .sb-menu-lu {
+		flex-direction: column;
+		text-transform: uppercase;
+	}
+	& .sb-menu-li {
+		padding: 0.8571428571428571em 0;
+		position: relative;
+		&.active, &:hover {
+			background: darken($color-anthraciteDarkGray,7%);
+			&::before {
+				content: '';
+				background:$color-sand;
+				width: 0.2857142857142857em;
+				height: 100%;
+				left: 0;
+				top: 0;
+				position: absolute;
+			}
+		}
+	}
+	& .logo {
+		padding-top: $size-24px;
+		& .name {
+			text-transform: uppercase;
+			font-family: "Segoe Script", sans-serif;
+			font-size: $size-20px;
+			color: darken($color-sand, 5%);
+		}
+	}
+	& .languages {
+		padding-bottom: $size-24px;
+		text-transform: uppercase;
+		& .language {
+			color: $color-greenDarkGray;
+			margin: 0 0.2857142857142857em;
+			&.active {
+				color: $color-wight;
+			}
+		}
+	}
+}

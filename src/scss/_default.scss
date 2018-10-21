@@ -1,17 +1,54 @@
 @import "params/variables";
 @import "params/mixins";
-@import "normalize-css";
+
+/*!Main Styles*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+@import url(//db.onlinewebfonts.com/c/5c452fb7a0f5751f4e94e9d84eb01154?family=Segoe+Script);
+
 html {
 	font-size: 10px;
 }
 
 body {
-	background: #ffffff;
-	font-size: 150px;
+	background: $color-wight;
+	color: $color-greenDarkGray;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	min-width: 36rem;
 }
-.all {
-	background-color: crimson;
-	margin: 0 auto;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.socials {
+	& .icon {
+		margin: 0 $size-8px;
+	}
 }
 
 @import "grid.scss";
+
+.all {
+	background-color: crimson;
+	max-width: 136.6rem;
+	margin: 0 auto;
+	@import "sid-bap";
+}
+@import "font-awesome/font-awesome";
+

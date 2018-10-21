@@ -4,3 +4,8 @@
 	@include wrapper();
 
 }
+
+.row {
+	@include row-flex();
+	justify-content: center;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "project-sass",
+  "version": "1.0.0",
+  "description": "My First Gulp Projct",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koshelev1988/Podbor-Receptov.git"
+  },
+  "keywords": [
+    "verstka"
+  ],
+  "author": "Leha Koshekev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koshelev1988/Podbor-Receptov/issues"
+  },
+  "homepage": "https://github.com/koshelev1988/Podbor-Receptov#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^6.0.0",
+    "smart-grid": "^2.1.2"
+  }
+}
