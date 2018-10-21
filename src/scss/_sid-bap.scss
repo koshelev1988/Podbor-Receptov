@@ -57,7 +57,7 @@
 		padding-bottom: $size-24px;
 		text-transform: uppercase;
 		& .language {
-			color: $color-greenDarkGray;
+			color: lighten($color-greenDarkGray,10%);
 			margin: 0 0.2857142857142857em;
 			&.active {
 				color: $color-wight;

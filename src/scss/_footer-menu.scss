@@ -1,0 +1,29 @@
+@import "params/variables";
+@import "params/mixins";
+.footer-bottom {
+	background: $color-anthraciteDarkGray;
+	width: 100%;
+ & .menu-bottom {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 padding: $size-26px 0;
+	 & a {
+		 color: lighten($color-greenDarkGray,10%);
+		 &:hover {
+			 color: $color-wight;
+		 }
+	 }
+	}
+	& .menu-ul, & .socials {
+		font-size: $size-14px;
+	}
+	& .menu-ul {
+		text-transform: uppercase;
+		& .menu-li {
+			margin-right: 1.857142857142857em;
+		}
+	}
+
+}
+

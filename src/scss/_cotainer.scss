@@ -1,0 +1,7 @@
+@import "params/variables";
+@import "params/mixins";
+
+.wrapper {
+	width: 100%;
+	@import "footer";
+}

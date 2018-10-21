@@ -46,9 +46,12 @@ ul {
 
 .all {
 	background-color: crimson;
+	display: flex;
+	flex-direction: row;
 	max-width: 136.6rem;
 	margin: 0 auto;
 	@import "sid-bap";
+	@import "cotainer";
 }
 @import "font-awesome/font-awesome";
 

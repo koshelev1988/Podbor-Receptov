@@ -434,6 +434,11 @@ ul {
 
 .all {
   background-color: crimson;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
   max-width: 136.6rem;
   margin: 0 auto;
 }
@@ -515,12 +520,53 @@ ul {
 }
 
 .all .sid-bar .languages .language {
-  color: #5b5b5b;
+  color: #757575;
   margin: 0 0.2857142857142857em;
 }
 
 .all .sid-bar .languages .language.active {
   color: #ffffff;
+}
+
+.all .wrapper {
+  width: 100%;
+}
+
+.all .wrapper .footer .footer-bottom {
+  background: #2f3032;
+  width: 100%;
+}
+
+.all .wrapper .footer .footer-bottom .menu-bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 1.625em 0;
+}
+
+.all .wrapper .footer .footer-bottom .menu-bottom a {
+  color: #757575;
+}
+
+.all .wrapper .footer .footer-bottom .menu-bottom a:hover {
+  color: #ffffff;
+}
+
+.all .wrapper .footer .footer-bottom .menu-ul,
+.all .wrapper .footer .footer-bottom .socials {
+  font-size: 0.875em;
+}
+
+.all .wrapper .footer .footer-bottom .menu-ul {
+  text-transform: uppercase;
+}
+
+.all .wrapper .footer .footer-bottom .menu-ul .menu-li {
+  margin-right: 1.857142857142857em;
 }
 
 /*!
