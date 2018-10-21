@@ -532,6 +532,45 @@ ul {
   width: 100%;
 }
 
+.all .wrapper .header .header-top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 1.625em;
+}
+
+.all .wrapper .header #search {
+  color: #000000;
+  cursor: pointer;
+}
+
+.all .wrapper .header .icon {
+  color: #757575;
+  cursor: pointer;
+}
+
+.all .wrapper .header .users {
+  display: -webkit-box;
+  display: flex;
+}
+
+.all .wrapper .header .users .indicator {
+  display: inline-block;
+  background: #000000;
+  border-radius: 50%;
+  width: .6rem;
+  height: .6rem;
+}
+
+.all .wrapper .header .users #user {
+  margin-right: 1.5em;
+  margin-left: 2.25em;
+}
+
 .all .wrapper .footer .footer-bottom {
   background: #2f3032;
   width: 100%;
