@@ -14,7 +14,8 @@ const gulp         = require('gulp'),
 
 const cssFiles = [
 	'./src/libs/normalize.css/normalize.css',
-	'./src/css/style.css'
+	'./src/css/style.css',
+	'./src/css/font-awesome.css'
       ],
 
 	    jsFiles = [
@@ -41,11 +42,11 @@ const settings = {
 		},
 		sm: {
 			width: '780px',
-			fields: '15px' /* set fields only if you want to change container.fields */
+			fields: '1.5rem' /* set fields only if you want to change container.fields */
 		},
 		xs: {
 			width: '560px'
-		}
+		},
 		/*
 		We can create any quantity of break points.
 

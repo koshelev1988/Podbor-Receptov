@@ -1,0 +1,59 @@
+@import "params/variables";
+@import "params/mixins";
+
+.content-nav-wrap {
+	& .form-nav {
+		font-size: $size-14px;
+		color: $color-black;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	& .meta, & .btn {
+		margin-bottom: $size-18px;
+	}
+	& .meta {
+		display: flex;
+		width: 100%;
+		max-width: 14.6rem;
+		& .select-menu {
+			width: 100%;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: none;
+			border: none;
+			overflow: hidden;
+			&:focus {
+				outline: none;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+			& option[value="1"] {
+				color: $color-greenDarkGray;
+			}
+		}
+		& .icon {
+			align-self: center;
+			margin:0 $size-8px 0 ;
+			pointer-events: none;
+
+		}
+	}
+	& .btn {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		box-shadow: none;
+		background: none;
+		margin-left: $size-8px;
+		padding: $size-12px $size-22px;
+		outline: none;
+		&:hover {
+			background: #c7b084 ;
+			color: $color-wight;
+		}
+	}
+}

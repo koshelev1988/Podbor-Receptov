@@ -1,9 +1,10 @@
 @import "params/variables";
 @import "params/mixins";
-.footer-bottom {
+.menu-bottom {
 	background: $color-anthraciteDarkGray;
 	width: 100%;
- & .menu-bottom {
+	margin-bottom: 0;
+ & .wrapper {
 	 display: flex;
 	 flex-direction: row;
 	 justify-content: space-between;
@@ -18,7 +19,7 @@
 	& .menu-ul, & .socials {
 		font-size: $size-14px;
 	}
-	& .menu-ul {
+	& .bottom-menu-ul {
 		text-transform: uppercase;
 		& .menu-li {
 			margin-right: 1.857142857142857em;

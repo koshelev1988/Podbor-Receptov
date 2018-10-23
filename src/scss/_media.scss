@@ -1,0 +1,112 @@
+@import "params/variables";
+@import "params/mixins";
+
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 780px) {
+	body {
+		font-size: 12px;
+	}
+	.all {
+		flex-direction: column;
+		& .sid-bar {
+			max-width: 100%;
+			& .logo {
+				padding-top: 0;
+			}
+			& .sb-menu-lu {
+				display: none;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				& .sb-menu-li {
+					padding-left:  1.3em;
+					padding-right:  1.3em;
+				}
+			}
+		}
+		& .wrapper {
+			display: flex;
+			flex-direction: column;
+			& .header {
+				& .hamburger {
+					display: block;
+				}
+			}
+			& .menu-bottom {
+				order: -1;
+				display: none;
+				& .wrapper {
+					display: block;
+					& .bottom-menu-ul {
+						justify-content: space-between;
+					}
+					& .socials {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 560px) {
+	body {
+		font-size: 10px;
+	}
+	.all {
+		flex-direction: column;
+		& .sid-bar {
+			max-width: 100%;
+			& .sb-menu-lu {
+				flex-direction: column;
+				& .sb-menu-li {
+					padding-left:  0;
+					padding-right:  0;
+				}
+			}
+		}
+		& .wrapper {
+			& .menu-bottom {
+				& .wrapper {
+					display: flex;
+					& .bottom-menu-ul {
+						display: inline-flex;
+						flex-direction: column;
+						margin: 0 auto;
+						& .menu-li {
+							margin-top: $size-10px;
+							margin-bottom: $size-10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.all {
+		& .wrapper {
+			& .content-nav-wrap {
+				& .form-nav {
+					flex-direction: column;
+
+					& .meta, & a  {
+						align-self: center;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 2000px) {}

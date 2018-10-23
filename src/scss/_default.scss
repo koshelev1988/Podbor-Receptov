@@ -15,7 +15,7 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	min-width: 36rem;
+	min-width: 32rem;
 }
 
 * {
@@ -26,6 +26,15 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+h2.title {
+	font-size: $size-30px;
+	font-weight: 400;
+	margin-top: 0.7333333333333333em;
+	margin-bottom: 1.266666666666667em;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 ul {
@@ -42,6 +51,24 @@ ul {
 	}
 }
 
+.img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: $size-22px;
+	&-left, &-right {
+		align-self: center;
+		background: #dadada;
+		width: 100%;
+		max-width: 51.4rem;
+		height: $size-2px;
+	}
+	& img {
+		margin: 0 $size-10px;
+	}
+}
+
 @import "grid.scss";
 
 .all {
@@ -52,6 +79,7 @@ ul {
 	margin: 0 auto;
 	@import "sid-bap";
 	@import "cotainer";
+	@import "bottom-menu";
 }
-@import "font-awesome/font-awesome";
+@import "media";
 

@@ -1,5 +1,37 @@
 @import "params/variables";
 @import "params/mixins";
 .header {
-	@import "header-top";
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: $size-26px;
+	#search {
+		color: $color-black;
+		cursor: pointer;
+	}
+	.icon {
+		color: lighten($color-greenDarkGray, 10%);
+		cursor: pointer;
+	}
+	.users {
+		display: flex;
+		& .indicator {
+			display: inline-block;
+			background: #fe4900;
+			border-radius: 50%;
+			width: .6rem;
+			height: .6rem;
+		}
+		& #user {
+			margin-right: $size-24px;
+			margin-left: $size-36px;
+		}
+	}
+	& .hamburger {
+		display: none;
+		font-size: $size-30px;
+		color: $color-black;
+		margin-left: $size-20px;
+	}
 }
