@@ -14,8 +14,7 @@ const gulp         = require('gulp'),
 
 const cssFiles = [
 	'./src/libs/normalize.css/normalize.css',
-	'./src/css/style.css',
-	'./src/css/font-awesome.css'
+	'./src/css/style.css'
       ],
 
 	    jsFiles = [

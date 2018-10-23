@@ -9,61 +9,64 @@
 	width: 100%;
 	max-width: $size-175px;
 	height: 100%;
-	max-height: 67rem;
 	padding: $size-26px 0 $size-12px 0;
 	& a {
 		color: $color-wight;
 	}
-	& .logo {
-		padding-top: $size-24px;
-		padding-bottom: $size-12px;
+	& .wrapper {
+		height: 100%;
+		max-height: 67rem;
+		& .logo {
+			padding-top: $size-24px;
+			padding-bottom: $size-12px;
 
-		& .name {
-			text-transform: uppercase;
-			font-family: "Segoe Script", sans-serif;
-			font-size: $size-20px;
-			color: darken($color-sand, 5%);
-		}
-	}
-	& .sb-menu-lu,
-	& .logo,
-	& .languages,
-	& .socials {
-		text-align: center;
-	}
-	& .sb-menu-lu, & .languages {
-		font-size: $size-14px;
-
-	}
-	& .sb-menu-lu {
-		flex-direction: column;
-		text-transform: uppercase;
-	}
-	& .sb-menu-li {
-		padding: 0.8571428571428571em 0;
-		position: relative;
-		&.active, &:hover {
-			background: darken($color-anthraciteDarkGray,7%);
-			&::before {
-				content: '';
-				background:$color-sand;
-				width: 0.2857142857142857em;
-				height: 100%;
-				left: 0;
-				top: 0;
-				position: absolute;
+			& .name {
+				text-transform: uppercase;
+				font-family: "Segoe Script", sans-serif;
+				font-size: $size-20px;
+				color: darken($color-sand, 5%);
 			}
 		}
-	}
-	& .languages {
-		padding-top: $size-12px;
-		padding-bottom: $size-24px;
-		text-transform: uppercase;
-		& .language {
-			color: lighten($color-greenDarkGray,10%);
-			margin: 0 0.2857142857142857em;
-			&.active {
-				color: $color-wight;
+		& .sb-menu-lu,
+		& .logo,
+		& .languages,
+		& .socials {
+			text-align: center;
+		}
+		& .sb-menu-lu, & .languages {
+			font-size: $size-14px;
+
+		}
+		& .sb-menu-lu {
+			flex-direction: column;
+			text-transform: uppercase;
+		}
+		& .sb-menu-li {
+			padding: 0.8571428571428571em 0;
+			position: relative;
+			&.active, &:hover {
+				background: darken($color-anthraciteDarkGray, 7%);
+				&::before {
+					content: '';
+					background: $color-sand;
+					width: 0.2857142857142857em;
+					height: 100%;
+					left: 0;
+					top: 0;
+					position: absolute;
+				}
+			}
+		}
+		& .languages {
+			padding-top: $size-12px;
+			padding-bottom: $size-24px;
+			text-transform: uppercase;
+			& .language {
+				color: lighten($color-greenDarkGray, 10%);
+				margin: 0 0.2857142857142857em;
+				&.active {
+					color: $color-wight;
+				}
 			}
 		}
 	}

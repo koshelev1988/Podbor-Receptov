@@ -3059,8 +3059,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?kd4v2a");
-  src: url("fonts/icomoon.eot?kd4v2a#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?kd4v2a") format("truetype"), url("fonts/icomoon.woff?kd4v2a") format("woff"), url("fonts/icomoon.svg?kd4v2a#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?kd4v2a");
+  src: url("../fonts/icomoon.eot?kd4v2a#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kd4v2a") format("truetype"), url("../fonts/icomoon.woff?kd4v2a") format("woff"), url("../fonts/icomoon.svg?kd4v2a#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }

@@ -45,6 +45,11 @@ ul {
 	padding: 0;
 }
 
+img {
+  max-width: 100%;
+	height: auto;
+}
+
 .socials {
 	& .icon {
 		margin: 0 $size-8px;
@@ -69,7 +74,7 @@ ul {
 	}
 }
 
-@import "grid.scss";
+@import "grid";
 
 .all {
 	background-color: crimson;
@@ -81,5 +86,6 @@ ul {
 	@import "cotainer";
 	@import "bottom-menu";
 }
+@import "font-awesome/font-awesome";
 @import "media";
 

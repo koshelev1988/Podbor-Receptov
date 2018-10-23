@@ -371,6 +371,8 @@ template {
   display: none;
 }
 
+@charset "UTF-8";
+
 /*!Main Styles*/
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
@@ -416,6 +418,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .socials .icon {
@@ -465,6 +472,23 @@ ul {
   justify-content: center;
 }
 
+.preview-one,
+.preview-two {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: calc(50% - 1rem);
+}
+
+.preview-three {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: calc(25% - 1rem);
+}
+
 .all {
   background-color: crimson;
   display: -webkit-box;
@@ -488,7 +512,6 @@ ul {
   width: 100%;
   max-width: 10.9375em;
   height: 100%;
-  max-height: 67rem;
   padding: 1.625em 0 0.75em 0;
 }
 
@@ -496,49 +519,54 @@ ul {
   color: #ffffff;
 }
 
-.all .sid-bar .logo {
+.all .sid-bar .wrapper {
+  height: 100%;
+  max-height: 67rem;
+}
+
+.all .sid-bar .wrapper .logo {
   padding-top: 1.5em;
   padding-bottom: 0.75em;
 }
 
-.all .sid-bar .logo .name {
+.all .sid-bar .wrapper .logo .name {
   text-transform: uppercase;
   font-family: "Segoe Script", sans-serif;
   font-size: 1.25em;
   color: #d3b37c;
 }
 
-.all .sid-bar .sb-menu-lu,
-.all .sid-bar .logo,
-.all .sid-bar .languages,
-.all .sid-bar .socials {
+.all .sid-bar .wrapper .sb-menu-lu,
+.all .sid-bar .wrapper .logo,
+.all .sid-bar .wrapper .languages,
+.all .sid-bar .wrapper .socials {
   text-align: center;
 }
 
-.all .sid-bar .sb-menu-lu,
-.all .sid-bar .languages {
+.all .sid-bar .wrapper .sb-menu-lu,
+.all .sid-bar .wrapper .languages {
   font-size: 0.875em;
 }
 
-.all .sid-bar .sb-menu-lu {
+.all .sid-bar .wrapper .sb-menu-lu {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
   text-transform: uppercase;
 }
 
-.all .sid-bar .sb-menu-li {
+.all .sid-bar .wrapper .sb-menu-li {
   padding: 0.8571428571428571em 0;
   position: relative;
 }
 
-.all .sid-bar .sb-menu-li.active,
-.all .sid-bar .sb-menu-li:hover {
+.all .sid-bar .wrapper .sb-menu-li.active,
+.all .sid-bar .wrapper .sb-menu-li:hover {
   background: #1e1e20;
 }
 
-.all .sid-bar .sb-menu-li.active::before,
-.all .sid-bar .sb-menu-li:hover::before {
+.all .sid-bar .wrapper .sb-menu-li.active::before,
+.all .sid-bar .wrapper .sb-menu-li:hover::before {
   content: '';
   background: #d9be8f;
   width: 0.2857142857142857em;
@@ -548,18 +576,18 @@ ul {
   position: absolute;
 }
 
-.all .sid-bar .languages {
+.all .sid-bar .wrapper .languages {
   padding-top: 0.75em;
   padding-bottom: 1.5em;
   text-transform: uppercase;
 }
 
-.all .sid-bar .languages .language {
+.all .sid-bar .wrapper .languages .language {
   color: #757575;
   margin: 0 0.2857142857142857em;
 }
 
-.all .sid-bar .languages .language.active {
+.all .sid-bar .wrapper .languages .language.active {
   color: #ffffff;
 }
 
@@ -614,7 +642,7 @@ ul {
   margin-left: 1.25em;
 }
 
-.all .wrapper .content-nav-wrap .form-nav {
+.all .wrapper .content .nav .form-nav {
   font-size: 0.875em;
   color: #000000;
   display: -webkit-box;
@@ -627,19 +655,19 @@ ul {
   justify-content: space-between;
 }
 
-.all .wrapper .content-nav-wrap .meta,
-.all .wrapper .content-nav-wrap .btn {
+.all .wrapper .content .nav .meta,
+.all .wrapper .content .nav .btn {
   margin-bottom: 1.125em;
 }
 
-.all .wrapper .content-nav-wrap .meta {
+.all .wrapper .content .nav .meta {
   display: -webkit-box;
   display: flex;
   width: 100%;
   max-width: 14.6rem;
 }
 
-.all .wrapper .content-nav-wrap .meta .select-menu {
+.all .wrapper .content .nav .meta .select-menu {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -649,25 +677,25 @@ ul {
   overflow: hidden;
 }
 
-.all .wrapper .content-nav-wrap .meta .select-menu:focus {
+.all .wrapper .content .nav .meta .select-menu:focus {
   outline: none;
 }
 
-.all .wrapper .content-nav-wrap .meta .select-menu:hover {
+.all .wrapper .content .nav .meta .select-menu:hover {
   cursor: pointer;
 }
 
-.all .wrapper .content-nav-wrap .meta .select-menu option[value="1"] {
+.all .wrapper .content .nav .meta .select-menu option[value="1"] {
   color: #5b5b5b;
 }
 
-.all .wrapper .content-nav-wrap .meta .icon {
+.all .wrapper .content .nav .meta .icon {
   align-self: center;
   margin: 0 0.5em 0;
   pointer-events: none;
 }
 
-.all .wrapper .content-nav-wrap .btn {
+.all .wrapper .content .nav .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -678,9 +706,147 @@ ul {
   outline: none;
 }
 
-.all .wrapper .content-nav-wrap .btn:hover {
+.all .wrapper .content .nav .btn:hover {
   background: #c7b084;
   color: #ffffff;
+}
+
+.all .wrapper .content .compilation img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .wrapper .content .compilation .preview-one,
+.all .wrapper .content .compilation .preview-two,
+.all .wrapper .content .compilation .preview-three {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.all .wrapper .content .compilation .preview-one .overly,
+.all .wrapper .content .compilation .preview-two .overly,
+.all .wrapper .content .compilation .preview-three .overly {
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .wrap,
+.all .wrapper .content .compilation .preview-two .overly .wrap,
+.all .wrapper .content .compilation .preview-three .overly .wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1.25em;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .wrap .item,
+.all .wrapper .content .compilation .preview-one .overly .wrap .title,
+.all .wrapper .content .compilation .preview-two .overly .wrap .item,
+.all .wrapper .content .compilation .preview-two .overly .wrap .title,
+.all .wrapper .content .compilation .preview-three .overly .wrap .item,
+.all .wrapper .content .compilation .preview-three .overly .wrap .title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.all .wrapper .content .compilation .preview-one {
+  max-width: 54.4rem;
+  max-height: 40.8rem;
+}
+
+.all .wrapper .content .compilation .preview-one .overly a {
+  color: #ffffff;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .title {
+  font-size: 1.875em;
+  font-weight: 700;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .meta {
+  width: 100%;
+  max-width: 15rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .meta .decor {
+  align-self: center;
+  background: #ffffff;
+  width: 100%;
+  max-width: 5rem;
+  height: .1rem;
+}
+
+.all .wrapper .content .compilation .preview-one .overly .meta .icon {
+  font-size: 1.875em;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap,
+.all .wrapper .content .compilation .preview-three .wrap {
+  display: inline-block;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap .item,
+.all .wrapper .content .compilation .preview-three .wrap .item {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.375em;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap .description,
+.all .wrapper .content .compilation .preview-three .wrap .description {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  background: #2f3032;
+  color: #ffffff;
+  font-size: 1.25em;
+  padding: 0.25em;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap .description a,
+.all .wrapper .content .compilation .preview-three .wrap .description a {
+  color: #ffffff;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap .description > span,
+.all .wrapper .content .compilation .preview-three .wrap .description > span {
+  text-transform: uppercase;
+}
+
+.all .wrapper .content .compilation .preview-two .wrap .description .icon,
+.all .wrapper .content .compilation .preview-three .wrap .description .icon {
+  margin-right: 0.25em;
+}
+
+.all .wrapper .content .compilation .preview-two {
+  max-width: 54.2rem;
+  max-height: 26.8rem;
+}
+
+.all .wrapper .content .compilation .preview-three {
+  max-width: 26.7rem;
+  max-height: 26.8rem;
 }
 
 .all .wrapper .footer {
@@ -724,8 +890,6 @@ ul {
 .all .menu-bottom .bottom-menu-ul .menu-li {
   margin-right: 1.857142857142857em;
 }
-
-@charset "UTF-8";
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -3787,8 +3951,8 @@ ul {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?kd4v2a");
-  src: url("fonts/icomoon.eot?kd4v2a#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?kd4v2a") format("truetype"), url("fonts/icomoon.woff?kd4v2a") format("woff"), url("fonts/icomoon.svg?kd4v2a#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?kd4v2a");
+  src: url("../fonts/icomoon.eot?kd4v2a#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kd4v2a") format("truetype"), url("../fonts/icomoon.woff?kd4v2a") format("woff"), url("../fonts/icomoon.svg?kd4v2a#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3892,6 +4056,15 @@ ul {
 }
 
 @media screen and (max-width: 560px) {
+  .preview-one,
+  .preview-two {
+    width: calc(100% - 1rem);
+  }
+
+  .preview-three {
+    width: calc(100% - 1rem);
+  }
+
   body {
     font-size: 10px;
   }
@@ -3938,14 +4111,14 @@ ul {
 }
 
 @media screen and (max-width: 400px) {
-  .all .wrapper .content-nav-wrap .form-nav {
+  .all .wrapper .nav .form-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
   }
 
-  .all .wrapper .content-nav-wrap .form-nav .meta,
-  .all .wrapper .content-nav-wrap .form-nav a {
+  .all .wrapper .nav .form-nav .meta,
+  .all .wrapper .nav .form-nav a {
     align-self: center;
   }
 }

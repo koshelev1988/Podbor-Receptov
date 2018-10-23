@@ -10,3 +10,14 @@
 	@include row-flex();
 	justify-content: center;
 }
+
+.preview-one, .preview-two {
+	@include col();
+	@include size(6);
+	@include size-xs(12)
+}
+.preview-three {
+	@include col();
+	@include size(3);
+	@include size-xs(12)
+}
