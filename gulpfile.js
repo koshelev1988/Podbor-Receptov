@@ -153,8 +153,7 @@ function clean() {
 
 // gulp.task('scripts', scripts);
 // gulp.task('watch', watch);
-gulp.task('dist', gulp.series(clean, scss, styles, stylesMin, scripts, scriptsMin, distHtml, distCss, distJs,  distFonts),
-	                gulp.parallel(img));
+gulp.task('dist', gulp.series(clean, scss, styles, stylesMin, scripts, scriptsMin, distHtml, distCss, distJs, distFonts, img ));
 
 gulp.task('default', watch);
 

@@ -2,8 +2,6 @@
 
 .container {
 	@include wrapper();
-	width: 100%;
-
 }
 
 .row {
@@ -21,3 +19,18 @@
 	@include size(3);
 	@include size-xs(12)
 }
+
+.article {
+	@include col();
+	@include size(6);
+	@include size-xs(12)
+}
+
+.trends {
+	@include col();
+	@include size(3);
+	@include size-sm(6);
+	@include size-xs(12);
+
+}
+

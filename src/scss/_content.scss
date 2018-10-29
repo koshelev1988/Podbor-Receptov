@@ -1,6 +1,23 @@
 @import "params/variables";
 @import "params/mixins";
 .content {
-	@import "content-nav";
-	@import "content-compilation";
+	& .compilation {
+		& .content {
+			padding-top: $size-6px;
+			padding-bottom: $size-10px;
+		}
+		@import "content-compilation";
+	}
+	& .articles {
+		& .content {
+			padding: $size-20px 0 $size-10px;
+		}
+		@import "content-articles";
+	}
+	& .trends-compilation {
+		& .content {
+			padding: $size-10px 0;
+		}
+		@import "content-trends-compilation";
+	}
 }

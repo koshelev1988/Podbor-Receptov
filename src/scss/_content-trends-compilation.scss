@@ -1,0 +1,25 @@
+@import "params/variables";
+@import "params/mixins";
+.content {
+	& .preview-one {
+		position: relative;
+		max-width: 26.7rem;
+		height: 26.5625em;
+		margin-bottom: 1rem;
+		& img {
+			height: 100%;
+			max-height: 42.5rem;
+		}
+		& .overly {
+			& .wrap {
+				display: flex;
+				justify-content: flex-end;
+				& .title {
+					color: $color-wight;
+					font-size: $size-30px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

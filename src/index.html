@@ -11,10 +11,10 @@
 	<body>
 		<div class="all">
 			<div class="sid-bar">
-				<div class="wrapper">
+				<div class="wrap">
 					<div class="logo">
 						<a href="#"><span class="name">PSD.IN.UA</span></a>
-					</div>
+					</div><!---/logo---->
 					<nav class="sb-menu">
 						<ul class="sb-menu-lu">
 							<li class="sb-menu-li active"><a href="#">РЕЦЕПТЫ</a></li>
@@ -25,7 +25,7 @@
 							<li class="sb-menu-li"><a href="#">АВТОРЫ</a></li>
 						</ul>
 					</nav><!---/sb-menu--->
-					<div class="wrap">
+					<div class="meta">
 						<div class="languages">
 							<a href="#"><span class="language active">ru</span></a>
 							<a href="#"><span class="language">en</span></a>
@@ -37,176 +37,578 @@
 							<a href="#" class="icon fa fa-google-plus" aria-hidden="true"></a>
 						</div>
 					</div>
-				</div>
-			</div><!---/sid-bar--->
+				</div><!---/wrap---->
+			</div><!-----/sid-bar--->
 			<div class="wrapper">
-				<div class="container">
-					<header class="header">
-						<i id="search" class="icon fa fa-search" aria-hidden="true"></i>
-						<div class="users">
-							<i id="bell" class="icon fa fa-bell" aria-hidden="true"></i>
-							<span class="indicator"></span>
-							<i id="user" class="icon fa fa-user" aria-hidden="true"></i>
-						</div>
-						<i class="hamburger fa fa-bars" aria-hidden="true"></i>
-					</header><!---/header--->
-					<div class="content">
-						<div class="nav">
+				<header class="header container">
+					<i id="search" class="icon fa fa-search" aria-hidden="true"></i>
+					<div class="users">
+						<i id="bell" class="icon fa fa-bell" aria-hidden="true"></i>
+						<span class="indicator" style="background: #fe4900; border-radius: 50%; width: .6rem; 	height: .6rem;"></span>
+						<i id="user" class="icon fa fa-user" aria-hidden="true"></i>
+					</div>
+					<i class="hamburger fa fa-bars" aria-hidden="true"></i>
+				</header><!---/header--->
+				<div class="content">
+					<div class="compilation container">
+						<div class="decor-title">
 							<div class="img">
 								<span class="img-left"></span>
 								<img src="./img/header.png" alt="imgContent">
 								<span class="img-right"></span>
 							</div>
-							<h2 class="title">ПОДБОР РЕЦЕПТОВ</h2>
+							<a href="#"><h2 class="title">ПОДБОР РЕЦЕПТОВ</h2></a>
+						</div><!-----/decor-title--->
+						<div class="nav">
 							<form action="/" class="form-nav">
 								<div class="meta">
-								<select class="select-menu" name="select" id="" title="">
-									<option selected value="1">Любое</option>
-									<option value="2">Выпечка и десерты</option>
-									<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
-								</select>
+									<select class="select-menu" name="confectionery" id="confectionery" title="">
+										<option selected value="1">Любое</option>
+										<option value="2">Выпечка и десерты</option>
+										<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
+									</select>
 									<i class="icon fa fa-angle-down" aria-hidden="true"></i>
 								</div>
 								<div class="meta">
-								<select class="select-menu" name="select" id="" title="">
-									<option selected value="1">Любое</option>
-									<option value="2">Выпечка и десерты</option>
-									<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
-								</select>
+									<select class="select-menu" name="kitchen" id="kitchen" title="">
+										<option selected value="1">Любое</option>
+										<option value="2">Выпечка и десерты</option>
+										<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
+									</select>
 									<i class="icon fa fa-angle-down" aria-hidden="true"></i>
 								</div>
 								<div class="meta">
-								<select class="select-menu" name="select" id="" title="">
-									<option selected value="1">Любое</option>
-									<option value="2">Выпечка и десерты</option>
-									<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
-								</select>
+									<select class="select-menu" name="dish" id="dish" title="">
+										<option selected value="1">Любое</option>
+										<option value="2">Выпечка и десерты</option>
+										<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
+									</select>
 									<i class="icon fa fa-angle-down" aria-hidden="true"></i>
 								</div>
 								<div class="meta">
-								<select class="select-menu" name="select" id="" title="">
-									<option selected value="1">Любое</option>
-									<option value="2">Выпечка и десерты</option>
-									<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
-								</select>
+									<select class="select-menu" name="menu" id="menu" title="">
+										<option selected value="1">Любое</option>
+										<option value="2">Выпечка и десерты</option>
+										<option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur deserunt nam optio sed totam.</option>
+									</select>
 									<i class="icon fa fa-angle-down" aria-hidden="true"></i>
 								</div>
-								<a href="#"><button type="submit" class="btn">Ингредиенты, детали</button></a>
-								<a href="#"><button type="submit" class="btn">Подобрать рецепты</button></a>
+								<a href="#"><span type="submit" class="btn">Ингредиенты, детали</span></a>
+								<a href="#"><span type="submit" class="btn">Подобрать рецепты</span></a>
 							</form>
+						</div><!--/nav--->
+						<div class="content">
+							<div class="row">
+								<div class="preview-one">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<a href="#">
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
+											</span>
+										</span>
+										</a>
+									</div><!--/overly--->
+								</div><!---/preview-one--->
+								<div class="preview-one">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<a href="#">
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
+											</span>
+										</span>
+										</a>
+									</div><!--/overly--->
+								</div><!---/preview-one--->
+							</div>
+							<div class="row">
+								<div class="preview-two">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-two--->
+								<div class="preview-three">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-three--->
+								<div class="preview-three">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-three--->
+							</div>
+							<div class="row">
+								<div class="preview-three">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-three--->
+								<div class="preview-three">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-three--->
+								<div class="preview-two">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<div class="wrap">
+										<span class="description">
+											<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
+										</span>
+											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
+										</div>
+									</div><!--/overly--->
+								</div><!---/preview-two--->
+							</div>
 						</div>
-						<div class="compilation">
+					</div><!---/compilation--->
+					<div class="articles container">
+						<div class="decor-title ">
+							<div class="img">
+								<span class="img-left"></span>
+								<img src="./img/header.png" alt="imgContent">
+								<span class="img-right"></span>
+							</div>
+							<a href="#"><h2 class="title">РЕЦЕПТЫ</h2></a>
+						</div><!-----/decor-title--->
+						<div class="nav">
+							<ul class="menu-ul">
+								<li class="menu-li active"><a href="#">Новые рецепты</a></li>
+								<li class="menu-li"><a href="#">Популярные</a></li>
+								<li class="menu-li"><a href="#">Рекомендуем</a></li>
+							</ul>
+						</div><!--/nav--->
+						<div class="content">
 							<div class="row">
-								<div class="preview-one">
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+							</div>
+							<div class="row">
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+							</div>
+							<div class="row">
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+							</div>
+							<div class="row">
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+								<div class="article">
+									<div class="photo">
+										<img src="https://placekitten.com/600/450" alt="preview-article">
+										<div class="overly">
+									<span class="author">
+										<a href="#">
+											<img src="https://placekitten.com/600/450" alt="avatar" class="avatar">
+											<span class="login">Daria Fedorenko</span>
+											</a>
+									</span>
+										</div>
+									</div>
+									<div class="description">
+										<a href="#"><span class="title">Утиные ножки с овощами игрудинкой</span></a>
+										<div class="meta">
+											<a href="#"><i class="icon fa fa-clock-o" aria-hidden="true"></i><span class="time">135 мин</span></a>
+											<a href="#"><i class="icon icon-chef"></i><span class="complexity">Сложно</span></a>
+											<a href="#" class="icon icon-running-solid"><span class="calories">125 ккал</span></a>
+										</div>
+										<a href="#">
+											<p class="desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto dignissimos dolor eum hic neque nostrum nulla obcaecati quas quidem, quo quod! Consectetur earum molestias quisquam recusandae. Consectetur culpa distinctio eveniet numquam! Aliquid ea fuga fugit minima omnis sequi sint velit. Amet eius eligendi illo laborum mollitia rem! Aliquam, itaque.
+											</p>
+										</a>
+										<div class="wrap">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="socials">
+												<a href="#" class="icon fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="icon fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+											</div>
+										</div>
+									</div>
+								</div><!---/article--->
+							</div>
+						</div>
+					</div><!---/articles--->
+					<div class="trends-compilation container">
+						<div class="decor-title ">
+							<div class="img">
+								<span class="img-left"></span>
+								<img src="./img/header.png" alt="imgContent">
+								<span class="img-right"></span>
+							</div>
+							<a href="#"><h2 class="title">#ГОРЯЧАЯПОДБОРКА</h2></a>
+						</div><!-----/decor-title--->
+						<div class="content">
+							<div class="row">
+								<div class="preview-one trends">
 									<img src="https://placekitten.com/600/450" alt="preview">
 									<div class="overly">
 										<a href="#">
-											<span class="wrap">
-											  <span class="item">БЛЮДО ДНЯ</span>
-												<span class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</span>
-												<span class="meta">
-													<span class="decor"></span>
-													<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
-													<span class="decor"></span>
-												</span>
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
 											</span>
+										</span>
 										</a>
 									</div><!--/overly--->
 								</div><!---/preview-one--->
-								<div class="preview-one">
+								<div class="preview-one trends">
 									<img src="https://placekitten.com/600/450" alt="preview">
 									<div class="overly">
 										<a href="#">
-											<span class="wrap">
-											  <span class="item">БЛЮДО ДНЯ</span>
-												<span class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</span>
-												<span class="meta">
-													<span class="decor"></span>
-													<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
-													<span class="decor"></span>
-												</span>
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
 											</span>
+										</span>
+										</a>
+									</div><!--/overly--->
+								</div><!---/preview-one--->
+								<div class="preview-one trends">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<a href="#">
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
+											</span>
+										</span>
+										</a>
+									</div><!--/overly--->
+								</div><!---/preview-one--->
+								<div class="preview-one trends">
+									<img src="https://placekitten.com/600/450" alt="preview">
+									<div class="overly">
+										<a href="#">
+										<span class="wrap">
+										  <p class="item">БЛЮДО ДНЯ</p>
+											<h4 class="title">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</h4>
+											<span class="meta">
+												<span class="decor"></span>
+												<i class="icon icon-cutlery-cross-couple-of-fork-and-spoon"></i>
+												<span class="decor"></span>
+											</span>
+										</span>
 										</a>
 									</div><!--/overly--->
 								</div><!---/preview-one--->
 							</div>
-							<div class="row">
-								<div class="preview-two">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-two--->
-								<div class="preview-three">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-three--->
-								<div class="preview-three">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-three--->
-							</div>
-							<div class="row">
-								<div class="preview-three">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-three--->
-								<div class="preview-three">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-three--->
-								<div class="preview-two">
-									<img src="https://placekitten.com/600/450" alt="preview">
-									<div class="overly">
-										<div class="wrap">
-											<span class="description">
-												<a href="#"><i class="icon icon-chef"></i><span>ПОЛЕЗНОЕ</span></a>
-											</span>
-											<a href="#"><span class="item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span></a>
-										</div>
-									</div><!--/overly--->
-								</div><!---/preview-two--->
-							</div>
-						</div><!---/compilation---->
-					</div><!-----/content---->
-					<footer class="footer"></footer><!--/footer--->
-				</div>
+						</div>
+					</div><!--/trends-compilation-->
+				</div><!---/content--->
+				<footer class="footer container">
+					<h2 class="title">ТОП АВТОРОВ</h2>
+					<div class="authors">
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+						<a href="#"><img src="https://placekitten.com/600/450" alt="avatar" class="avatar"></a>
+					</div>
+					<div class="subscription">
+						<span class="title">ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</span>
+						<form action="/">
+							<input type="text" placeholder="Адрес электронной почты">
+							<span type="submit" class="btn"><i class="icon fa fa-chevron-right" aria-hidden="true"></i></span>
+						</form>
+					</div>
+				</footer><!--/footer--->
 				<nav class="menu-bottom">
 					<div class="container">
-						<div class="wrapper">
+						<div class="wrap">
 							<ul class="bottom-menu-ul">
 								<li class="menu-li"><a href="#">ГЛАВНАЯ </a></li>
 								<li class="menu-li"><a href="#">РЕЦЕПТЫ</a></li>
@@ -224,7 +626,7 @@
 							</div>
 						</div>
 					</div>
-				</nav><!---/menu-bottom--->
+				</nav><!----/menu-bottom--->
 			</div><!----/wrapper--->
 		</div>
 		<script src="./js/libs.min.js"></script>

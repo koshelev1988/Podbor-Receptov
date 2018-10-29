@@ -1,0 +1,85 @@
+@import "params/variables";
+@import "params/mixins";
+.content {
+	& .article {
+		display: inline-flex;
+		flex-direction: row;
+		max-width: 54.4rem;
+		padding-bottom: 1rem;
+		& .photo {
+			max-width: 26.8rem;
+			max-height: 26.8rem;
+			position: relative;
+			& img {
+				width: 100%;
+				max-width: 57rem;
+				height: 100%;
+			}
+			& .overly{
+				display: flex;
+				padding: $size-20px ;
+				& .author {
+					align-self: flex-end;
+					display: flex;
+				}
+				& a {
+					color: #fcfcfc;
+				}
+				& .avatar {
+					max-width: 2.4rem;
+					max-height: 2.4rem;
+					margin-right: $size-6px;
+				}
+			}
+		}
+		& .description {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: $size-12px;
+			max-width: 26.8rem;
+			max-height: 26.8rem;
+			& .title {
+				display: flex;
+				font-size: $size-24px;
+				color: $color-black;
+				text-align: center;
+			}
+			& .meta {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				margin: $size-6px 0;
+				& .icon {
+					font-weight: 700;
+				}
+				& span {
+					font-size: $size-12px;
+					font-weight: 700;
+					margin: 0 $size-10px;
+				}
+				& a {
+					color: $color-sand;
+				}
+			}
+			& .desc {
+				color: $color-lightYellowBrown;
+				max-height: 5.7rem;
+				overflow:hidden;
+				margin: 0;
+			}
+			& .wrap {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding-top: $size-12px;
+				& a {
+					color: $color-greenDarkGray;
+				}
+				& i {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding-top: $size-26px;
+	padding-bottom: $size-10px;
 	#search {
 		color: $color-black;
 		cursor: pointer;
@@ -16,13 +17,6 @@
 	}
 	.users {
 		display: flex;
-		& .indicator {
-			display: inline-block;
-			background: #fe4900;
-			border-radius: 50%;
-			width: .6rem;
-			height: .6rem;
-		}
 		& #user {
 			margin-right: $size-24px;
 			margin-left: $size-36px;

@@ -9,14 +9,13 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-	& .meta, & .btn {
-		margin-bottom: $size-18px;
+
 	}
 	& .meta {
 		display: flex;
 		width: 100%;
 		max-width: 14.6rem;
+		padding-bottom: $size-10px;
 		& .select-menu {
 			width: 100%;
 			-webkit-appearance: none;
@@ -48,12 +47,32 @@
 		appearance: none;
 		box-shadow: none;
 		background: none;
+		color: $color-black;
+		display: block;
 		margin-left: $size-8px;
+		margin-bottom: $size-10px;
 		padding: $size-12px $size-22px;
 		outline: none;
 		&:hover {
 			background: #c7b084 ;
 			color: $color-wight;
+		}
+	}
+	& .menu-ul {
+		justify-content: center;
+		& .menu-li {
+			margin: 0 $size-10px;
+			padding: $size-12px $size-24px;
+			&.active, &:hover {
+				background: $color-anthraciteDarkGray;
+				border-radius: $size-14px;
+				& a {
+					color: $color-wight;
+				}
+			}
+			& a {
+				color: $color-black;
+			}
 		}
 	}
 }

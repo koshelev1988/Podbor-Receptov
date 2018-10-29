@@ -3,7 +3,9 @@
 
 .wrapper {
 	width: 100%;
+	margin-left: $size-175px;
 	@import "header";
 	@import "content";
 	@import "footer";
+	@import "bottom-menu";
 }

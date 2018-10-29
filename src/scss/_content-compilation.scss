@@ -1,6 +1,6 @@
 @import "params/variables";
 @import "params/mixins";
-.compilation {
+.content {
 	& img {
 		width: 100%;
 		height: 100%;
@@ -8,58 +8,6 @@
 	& .preview-one, & .preview-two, & .preview-three {
 		position: relative;
 		margin-bottom: 1rem;
-		& .overly {
-			background: transparentize($color-black,.8);
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			& .wrap {
-				flex-direction: column;
-				width: 100%;
-				height: 100%;
-				padding: $size-20px;
-				& .item, & .title {
-					text-transform: uppercase;
-					text-align: center;
-				}
-			}
-		}
-	}
-	& .preview-one {
-		max-width: 54.4rem;
-		max-height: 40.8rem;
-		& .overly {
-			& a {
-				color: $color-wight;
-			}
-			& .wrap {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			& .title  {
-				font-size: $size-30px;
-				font-weight: 700;
-			}
-			& .meta {
-				width: 100%;
-				max-width: 15rem;
-				display: flex;
-				flex-direction: row;
-				& .decor {
-					align-self: center;
-					background: $color-wight;
-					width: 100%;
-					max-width: 5rem;
-					height: .1rem;
-				}
-				& .icon {
-					font-size: $size-30px;
-				}
-			}
-		}
 	}
 	& .preview-two, & .preview-three {
 		& .wrap {
@@ -69,6 +17,9 @@
 				background: $color-wight;
 				color: $color-black;
 				padding: $size-6px;
+				&:hover {
+					background: darken($color-wight,10%);
+				}
 			}
 			& .description {
 				display: inline-flex;
@@ -76,6 +27,9 @@
 				color: $color-wight;
 				font-size: $size-20px;
 				padding: $size-4px;
+				&:hover {
+					background: lighten($color-anthraciteDarkGray,10%);
+				}
 				& a {
 					color: $color-wight;
 				}

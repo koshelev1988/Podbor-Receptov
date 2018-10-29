@@ -2,5 +2,48 @@
 @import "params/mixins";
 
 .footer {
-	width: 100px;
+	width: 100%;
+	padding-top: $size-24px;
+	padding-bottom: $size-24px;
+	& h2.title {
+		font-size: $size-30px;
+		font-weight: 400;
+		text-align: center;
+		margin: 0;
+	}
+	& .authors {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: $size-24px;
+		& .avatar {
+			margin: 0 $size-8px $size-10px;
+		}
+	}
+	& .subscription {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: $size-14px;
+		padding: $size-20px 0;
+		& form {
+			display: inline-flex;
+			margin-top: 1em;
+			& input[type=text], & .btn {
+				appearance: none;
+				outline: none;
+			}
+			& input[type=text] {
+				width: 22em;
+				padding: $size-8px;
+				background: none;
+				border: none;
+			}
+			& .btn {
+				color: $color-wight;
+				background: $color-anthraciteDarkGray;
+				padding: $size-8px $size-12px;
+			}
+		}
+	}
 }
